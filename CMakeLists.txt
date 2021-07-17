@@ -77,3 +77,14 @@ else()
 endif()
 
 target_include_directories(FreeImage PRIVATE ${INCLUDE})
+
+
+
+
+install(TARGETS FreeImage DESTINATION lib)
+install(FILES Source/FreeImage.h DESTINATION include/FreeImage)
+install(FILES Source/config.h DESTINATION include/FreeImage)
+install(FILES Wrapper/FreeImagePlus/FreeImagePlus.h DESTINATION include/FreeImage)
+
+
+
